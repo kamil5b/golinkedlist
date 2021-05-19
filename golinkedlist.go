@@ -1,3 +1,13 @@
+/**
+golinkedlist
+CREATED BY : kamil5b
+
+20th May 2021
+02:53 Bandung, Indonesia
+
+Its free to use, suitable to learn data structure using Go.
+
+**/
 package golinkedlist
 
 import (
