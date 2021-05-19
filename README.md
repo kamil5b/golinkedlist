@@ -3,6 +3,8 @@ I created my own linked list using Go. Even though Go had their own library for 
 
 I'm using doubly linear linked list because its practical and easy to use.
 
+Suitable for student that learning data structure with Go Language
+
 # Features
 ## Headers
 ```Go
