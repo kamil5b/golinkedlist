@@ -4,6 +4,27 @@ I created my own linked list using Go. Even though Go had their own library for 
 I'm using doubly linear linked list because its practical and easy to use.
 
 # Features
+## Headers
+```Go
+type Node struct {
+	value      interface{}
+	next, prev *Node
+}
+
+type LinkedList struct {
+	first, last *Node
+	Size        int
+}
+```
+## Create List
+```Go
+func CreateList() LinkedList
+```
+This feature creating the list
+There is a sub featur for emptying the list
+```Go
+func (*LinkedList) EmptyingList()
+```
 ## Add
 ```Go 
 func (*LinkedList) Add(interface{})
@@ -16,3 +37,21 @@ func (*LinkedList) AddFirst(*Node)
 ```Go
 func (*LinkedList) AddLast(*Node)
 ```
+## Get
+```Go
+func (*LinkedList) Get(int) (interface{}, error)
+```
+This feature return the value that user gave index in the list. It can occur error if the input parameter goes beyond the size of the list or if the list is empty
+```Go
+if l.Size == 0 {
+		return nil, errors.New("list empty")
+	}
+if i >= l.Size {
+		return nil, errors.New("out of bound")
+}
+```
+## Remove
+```Go
+
+```
+
