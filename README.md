@@ -3,7 +3,7 @@ I created my own linked list using Go. Even though Go had their own library for 
 
 I'm using doubly linear linked list because its practical and easy to use.
 
-Suitable to learning data structure with Go Language, its totally open source you just have to clone or download it
+Suitable for learning data structure with Go Language, its totally open source you just have to clone or download it
 
 # Features
 ## Headers
