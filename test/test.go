@@ -25,5 +25,13 @@ func main() {
 		val, _ := l.Get(i)
 		fmt.Println(val)
 	}
+	fmt.Println()
+
+	l.Remove(2)
+
+	for i := 0; i < l.Size; i++ {
+		val, _ := l.Get(i)
+		fmt.Println(val)
+	}
 
 }
