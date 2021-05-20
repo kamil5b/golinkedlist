@@ -1,6 +1,6 @@
 package golinkedlist
 
-func (l *LinkedList) removeFirst() {
+func (l *DoublyLinkedList) removeFirst() {
 
 	n := l.first
 	l.first = n.next
@@ -8,7 +8,7 @@ func (l *LinkedList) removeFirst() {
 
 }
 
-func (l *LinkedList) removeLast() {
+func (l *DoublyLinkedList) removeLast() {
 
 	n := l.last
 	l.last = n.prev
@@ -16,7 +16,7 @@ func (l *LinkedList) removeLast() {
 
 }
 
-func (l *LinkedList) removeMiddle(n *Node) {
+func (l *DoublyLinkedList) removeMiddle(n *Doubly_Node) {
 
 	n.prev.next = n.next
 	n.next.prev = n.prev

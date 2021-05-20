@@ -1,6 +1,6 @@
 package golinkedlist
 
-func (l *LinkedList) AddFirst(n *Node) {
+func (l *DoublyLinkedList) AddFirst(n *Doubly_Node) {
 	n.next = l.first
 	l.first.prev = n
 	l.first = n
@@ -9,7 +9,7 @@ func (l *LinkedList) AddFirst(n *Node) {
 	}
 }
 
-func (l *LinkedList) AddLast(n *Node) {
+func (l *DoublyLinkedList) AddLast(n *Doubly_Node) {
 	n.prev = l.last
 	l.last.next = n
 	l.last = n

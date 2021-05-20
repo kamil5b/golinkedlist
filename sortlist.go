@@ -81,7 +81,7 @@ func moreThan(a, b interface{}) (bool, error) {
 	}
 }
 
-func (l *LinkedList) sortDescendingLinear() error {
+func (l *DoublyLinkedList) sortDescending() error {
 
 	for current := l.first; current.next != nil; current = current.next {
 		for index := current.next; index != nil; index = index.next {
@@ -98,7 +98,7 @@ func (l *LinkedList) sortDescendingLinear() error {
 	return nil
 }
 
-func (l *LinkedList) sortAscendingLinear() error {
+func (l *DoublyLinkedList) sortAscending() error {
 
 	for current := l.first; current.next != nil; current = current.next {
 		for index := current.next; index != nil; index = index.next {
