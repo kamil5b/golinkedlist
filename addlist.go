@@ -17,3 +17,19 @@ func (l *DoublyLinkedList) AddLast(n *Doubly_Node) {
 		l.first = n
 	}
 }
+
+func (l *SinglyLinkedList) AddFirst(n *Singly_Node) {
+	n.next = l.first
+	l.first = n
+}
+
+func (l *SinglyLinkedList) AddLast(n *Singly_Node) {
+
+	m := l.first
+	for m.next != nil {
+		m = m.next
+	}
+
+	m.next = n
+
+}

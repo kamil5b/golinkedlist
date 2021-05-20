@@ -114,3 +114,37 @@ func (l *DoublyLinkedList) sortAscending() error {
 
 	return nil
 }
+
+func (l *SinglyLinkedList) sortDescending() error {
+
+	for current := l.first; current.next != nil; current = current.next {
+		for index := current.next; index != nil; index = index.next {
+			if ok, err := lessThan(current.value, index.value); ok {
+				temp := current.value
+				current.value = index.value
+				index.value = temp
+			} else if err != nil {
+				return err
+			}
+		}
+	}
+
+	return nil
+}
+
+func (l *SinglyLinkedList) sortAscending() error {
+
+	for current := l.first; current.next != nil; current = current.next {
+		for index := current.next; index != nil; index = index.next {
+			if ok, err := moreThan(current.value, index.value); ok {
+				temp := current.value
+				current.value = index.value
+				index.value = temp
+			} else if err != nil {
+				return err
+			}
+		}
+	}
+
+	return nil
+}

@@ -7,7 +7,10 @@ import (
 )
 
 func main() {
-	l := golinkedlist.CreateList()
+
+	var l golinkedlist.DoublyLinkedList
+
+	l.EmptyingList()
 
 	l.Add(5)
 	l.Add(2)
